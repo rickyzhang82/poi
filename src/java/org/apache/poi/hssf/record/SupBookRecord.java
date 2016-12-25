@@ -51,7 +51,7 @@ public final class SupBookRecord extends StandardRecord {
     protected static final char CH_STARTUP_DIR = 6;
     protected static final char CH_ALT_STARTUP_DIR = 7;
     protected static final char CH_LIB_DIR = 8;
-    protected static final String PATH_SEPERATOR = System.getProperty("file.separator");
+    protected static final String PATH_SEPERATOR = "\\";
 
     public static SupBookRecord createInternalReferences(short numberOfSheets) {
         return new SupBookRecord(false, numberOfSheets);
